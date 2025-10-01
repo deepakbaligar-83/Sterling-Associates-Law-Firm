@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applications",
+  "info": {
+    "singularName": "job-application",
+    "pluralName": "job-applications",
+    "displayName": "Job Application",
+    "description": "Career applications from the website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files"]
+    },
+    "coverLetter": {
+      "type": "text",
+      "required": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["pending", "reviewing", "shortlisted", "rejected", "hired"],
+      "default": "pending"
+    }
+  }
+}

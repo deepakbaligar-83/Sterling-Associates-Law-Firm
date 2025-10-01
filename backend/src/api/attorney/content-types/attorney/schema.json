@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attorneys",
+  "info": {
+    "singularName": "attorney",
+    "pluralName": "attorneys",
+    "displayName": "Attorney",
+    "description": "Attorney profiles for the team page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "expertise": {
+      "type": "string",
+      "required": true
+    },
+    "bio": {
+      "type": "text",
+      "required": true
+    },
+    "education": {
+      "type": "text",
+      "required": true
+    },
+    "barAdmissions": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_images",
+  "info": {
+    "singularName": "hero-image",
+    "pluralName": "hero-images",
+    "displayName": "Hero Image",
+    "description": "Homepage hero section image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "altText": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

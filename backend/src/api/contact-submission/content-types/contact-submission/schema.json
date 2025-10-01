@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_submissions",
+  "info": {
+    "singularName": "contact-submission",
+    "pluralName": "contact-submissions",
+    "displayName": "Contact Submission",
+    "description": "Contact form submissions from the website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "legalArea": {
+      "type": "enumeration",
+      "enum": [
+        "Corporate",
+        "Litigation",
+        "Employment",
+        "Real Estate",
+        "IP",
+        "Family",
+        "Other"
+      ],
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "contacted", "resolved"],
+      "default": "new"
+    }
+  }
+}
